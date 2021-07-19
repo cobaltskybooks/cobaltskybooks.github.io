@@ -1,0 +1,21 @@
+{{ define "main" }}
+<header>
+  <h1>{{.Site.Title}}</h1>
+</header>
+
+<main aria-role="main">
+  <!-- Will pull from content/_index.md -->
+  {{.Content}}
+
+  <h2>Chapters</h2>
+  <div id="chapters">
+    <ul>
+      {{ range sort .Site.RegularPages "File.TranslationBaseName" }}
+      <li>
+        <a href="{{.Permalink}}">Chapter {{ .File.TranslationBaseName }}: {{.Title}}</a>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+</main>
+{{ end }}

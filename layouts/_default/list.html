@@ -12,7 +12,7 @@
     <!-- Ranges through content/X/*.md where X is our current path -->
     {{ range .Pages }}
     <li>
-      <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | {{.Title}}</a>
+      <a href="{{.Permalink}}">{{.Title}}</a>
     </li>
     {{ end }}
   </ul>
