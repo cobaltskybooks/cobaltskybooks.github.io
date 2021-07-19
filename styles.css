@@ -1,0 +1,18 @@
+html { font-size: calc(1em + 0.5vw); }
+body {
+  font-family: sans-serif;
+  line-height: 1.4;
+
+  margin: 0 auto;
+  max-width: 800px;
+  box-sizing: border-box;
+
+  /* Buffer space for mobile */
+  padding-left: 8px; padding-right: 8px;
+
+  color: #000;
+  background: #fff;
+}
+
+a { color: #000; }
+
