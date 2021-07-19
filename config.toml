@@ -1,3 +1,6 @@
 baseURL = ""
 languageCode = "en-us"
 title = "Cobalt sky books"
+
+[params]
+  description = "Some books I'm writing"
